@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from employee_api.app.database import Base, engine
-from employee_api.app.routes import employees, auth
+from app.database import Base, engine
+from app.routes import employees, auth
 
 app = FastAPI(title="Employee Management API")
 
