@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: employee-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn employee_api.app.main:app --host 0.0.0.0 --port $PORT
